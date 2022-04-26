@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is a CSS comment */
+
+body {
+  font-size: 16px;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+.list-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
+  margin-top: 10px;
+}
+
+
+.article {
+  width: 70%;
+  margin: 1.5rem auto;
+}
+
+.article p {
+  margin-top: 1.25rem;
+}
+
+
+.bottom {
+  padding: 2rem 3rem;
+}

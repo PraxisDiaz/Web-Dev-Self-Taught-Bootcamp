@@ -1,0 +1,41 @@
+Flex Container Properties
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content
+
+Flex Item Properties
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    align-self
+
+
+<div class="container">
+    <div class="item">
+        <p> Item </p>
+    </div>
+    <div class="item">
+        <p> Item </p>
+    </div>
+    <div class="item">
+        <p> Item </p>
+    </div>
+    <div class="item">
+        <p> Item </p>
+    </div>
+    <div class="item">
+        <p> Item </p>
+    </div>
+</div>
+
+
+__________________________________________________
+|                                                |
+|                                                |
+| Item   Item   Item  Item  Item  Item           | 
+|                                                |
+|________________________________________________|

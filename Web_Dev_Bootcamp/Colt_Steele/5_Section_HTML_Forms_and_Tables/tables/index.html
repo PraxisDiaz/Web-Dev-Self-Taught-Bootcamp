@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="table-container">
+        <table class="table-1 table-style">
+            <thead>
+                <tr >
+                    <th scope="row" colspan="3">Table Head Area</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="th-info">Game</th>
+                    <th scope="col" class="th-info">Console</th>
+                    <th scope="col" class="th-info">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Sly Cooper</td>
+                    <td>Playstation</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td scope="row">Halo</td>
+                    <td>Xbox</td>
+                    <td>$60</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Total</th>
+                    <td>$100</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <table class="table-2 table-style">
+            <thead>
+                <!-- Colspan of th must be the same as max number of items or error -->
+                <tr>
+                    <th scope="row" colspan="4">Main Info</th>
+                </tr>
+                <tr>
+                    <th scope="col">Item 1</th>
+                    <th scope="col">Item 2</th>
+                    <th scope="col">Item 3</th>
+                    <th scope="col">Item 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3 </td>
+                    <td rowspan="3">Item 4 rowspan 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Item 1 colspan 2</td>
+                    <td>Item 2</td>
+                    <td>Item 3 In colspan 2 area</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

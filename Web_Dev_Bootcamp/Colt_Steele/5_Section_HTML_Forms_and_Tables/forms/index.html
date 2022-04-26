@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Forms</h1>
+
+    <!--Could use GET or POST for the method, POST requires a server while GET doesn't, GET is unsecure while POST is for sensitive information-->
+    
+    <!-- Multi-part form date is used so files, as in the 
+    file input, can be submitted as files are large and
+    must be broken up -->
+    <form action="" method="" enctype="multipart/form-data">
+
+        <div>
+            <label for="name">Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="username"
+                required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input 
+                type="password"
+                id="password"
+                name="password"
+                required>
+        </div>
+        <div>
+            <label for="date">Birthday</label>
+            <input 
+                type="date"
+                id="date"
+                name="birthday"
+                required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input 
+                type="number"
+                id="age"
+                name="age"
+                placeholder="27"
+                min="13"
+                max="50"> 
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                required>
+        </div>
+
+
+        <div>
+            <label for="banana">Banana</label>
+            <input 
+                type="checkbox" 
+                name="banana" 
+                id="banana">
+        </div>
+        <div>
+            <label for="apple">Apple</label>
+            <input 
+                type="checkbox" 
+                name="apple" 
+                id="apple">
+        </div>
+
+
+        <div>
+            <label for="male">Male</label>
+            <input 
+                type="radio" 
+                name="gender" 
+                id="male" 
+                value="male">
+        </div>
+        <div>
+            <label for="female">Female</label>
+            <input 
+                type="radio" 
+                name="gender" 
+                id="female" 
+                value="female">
+        </div>
+
+
+        <div>
+            <label for="url">URL</label>
+            <input 
+                type="url" 
+                name="url" 
+                id="url">
+        </div>
+
+        <div>
+            <label for="color">Color</label>
+            <input 
+                type="color" 
+                name="color" 
+                id="color">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input 
+                type="tell" 
+                id="phone" 
+                name="phone">
+        </div>
+
+        <div>
+            <label for="eyecolor">Eye Color</label>
+
+            <!-- Multiple allows you to select multiple options -->
+            <select name="eyecolor" id="eyecolor">
+                <option value="Green">Green</option>
+                <option value="Red" label="Red"></option>
+            </select>
+        </div>
+
+        <!-- If you want to have default text in textarea you must 
+        not put white space in between the tag as that will be 
+        included -->
+        <label for="bio">Biography</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+
+        <input 
+            type="hidden" 
+            name="hidden" 
+            value="Hello there weirdo">
+
+        <label for="file">File</label>
+        <input 
+            type="file"    
+            id="file" 
+            name="file"><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+</body>
+</html>

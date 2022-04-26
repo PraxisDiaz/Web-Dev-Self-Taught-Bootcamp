@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.table-style, th, td {
+    /* Makes the table columns and even width */
+    table-layout: fixed;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.th-info {
+    width: 33%;
+}
+
+th {
+    padding: 1rem;
+}
+
+td {
+    padding: .5rem;
+}
