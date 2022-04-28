@@ -30,6 +30,15 @@
 
 /* Backgrounds and Colored buttons */
 
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
 .bg-primary,
 .btn-primary {
     background-color: var(--primary-color);
@@ -54,16 +63,24 @@
     color: #fff;
 }
 
-.bg-primary a,
-.btn-primary a,
-.bg-secondary a,
-.btn-secondary a,
-.bg-light a,
-.btn-light a,
-.bg-dark a,
-.btn-dark a {
-    color: #fff;
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-color);
 }
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--light-color)
+}
+
+.text-dark {
+    color: var(--dark-color)
+}
+
 /* Text Sizes */
 
 .lead {
@@ -86,6 +103,28 @@
     font-size: 4rem;
 }
 
+/* Alert */
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: white;
+}
 
 .container {
     max-width: 1100px;
