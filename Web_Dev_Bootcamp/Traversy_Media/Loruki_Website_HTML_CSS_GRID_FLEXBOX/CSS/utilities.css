@@ -1,4 +1,3 @@
-
 /* Utilities */
 
 .card {
@@ -31,26 +30,40 @@
 
 /* Backgrounds and Colored buttons */
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
     background-color: var(--primary-color);
     color: white;
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary-color);
     color: white;
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
     background-color: var(--light-color);
     color: white;
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
     background-color: var(--dark-color);
     color: #fff;
 }
 
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-light a,
+.btn-light a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
 /* Text Sizes */
 
 .lead {
