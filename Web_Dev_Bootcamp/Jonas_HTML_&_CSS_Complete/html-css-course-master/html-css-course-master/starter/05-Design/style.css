@@ -117,6 +117,9 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: var(--main-color);
+  width: 24px;
+  height: 24px;
 }
 
 .features-title {
