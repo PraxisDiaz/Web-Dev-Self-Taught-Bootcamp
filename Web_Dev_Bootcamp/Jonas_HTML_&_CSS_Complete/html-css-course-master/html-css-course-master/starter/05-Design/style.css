@@ -184,6 +184,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: var(--main-color);
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
