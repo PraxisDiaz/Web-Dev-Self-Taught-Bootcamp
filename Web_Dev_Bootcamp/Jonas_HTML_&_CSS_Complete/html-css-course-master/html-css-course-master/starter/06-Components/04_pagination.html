@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 | Carousel </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<style>
+  /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+  /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    color: #343a40;
+    line-height: 1;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .container {
+    width: 500px;
+    margin: 200px auto;
+    padding: 10px;
+    /* background-color: #343a40; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+  }
+
+  .page {
+
+    padding: 20px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+  .page--selected {
+    background-color: #087f5b;
+    color: white;
+  }
+
+  .page-sort {
+    border: none;
+    width: 24px;
+    height: 24px;
+
+    background-color: #fff;
+  }
+
+  .arrow {
+    background-color: #fff;
+    padding: 12px;
+    border: 2px solid #087f5b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    
+    stroke: #087f5b;
+  }
+
+  .arrow--left {
+    left: 0;
+    transform: translate(-50%, 0);
+  }
+
+  .arrow--right {
+    right: 0;
+    transform: translate(50%, 0);
+  }
+
+  .btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+
+</style>
+
+<body>
+
+  <div class="container">
+    <button class="page">1</button>
+    <button class="page">2</button>
+    <button class="page page--selected">3</button>
+    <button class="page">4</button>
+    <button class="page">5</button>
+    <button class="page">6</button>
+    <button class="page-sort">...</button>
+    <button class="page">26</button>
+    <button class="arrow arrow--left">
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button class="arrow arrow--right">
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+</body>
+
+</html>
