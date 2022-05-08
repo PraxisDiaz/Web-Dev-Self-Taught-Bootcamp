@@ -91,6 +91,9 @@ body {
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
+
+    /* Always put the transition on the original element */
+    transition: background-color 300ms;
 }
 
 .btn--full:link,
@@ -115,4 +118,8 @@ body {
     /* border: 3px solid #fff; */
     /* Trick to add border inside of button */
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
 }
