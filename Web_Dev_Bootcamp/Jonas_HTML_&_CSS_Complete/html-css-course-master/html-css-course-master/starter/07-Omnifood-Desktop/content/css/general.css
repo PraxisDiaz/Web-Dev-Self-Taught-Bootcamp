@@ -58,6 +58,10 @@ body {
     color: #555;
 }
 
+strong {
+    font-weight: 500;
+}
+
 /* *************** */
 /* General Components */
 /* ******************* */
